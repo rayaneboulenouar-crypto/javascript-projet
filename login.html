@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Connexion</title>
+</head>
+<body id="loginBody">
+
+  <h1 id="loginTitle">Page de connexion</h1>
+
+  <div id="loginWrapper">
+    <div id="loginCard">
+
+      <form id="loginForm">
+        <div class="field-group">
+          <input type="text" id="pseudo" name="pseudo" placeholder="username" aria-label="Nom d'utilisateur" required />
+        </div>
+
+        <div class="field-group">
+          <input type="password" id="motDePasse" name="motDePasse" placeholder="password" aria-label="Mot de passe" required />
+        </div>
+
+        <div id="rememberGroup">
+          <input type="checkbox" id="rememberMe" name="rememberMe" />
+          <label for="rememberMe">Se rappeler de moi</label>
+        </div>
+
+        <button type="submit" id="loginBtn">LOGIN</button>
+
+        <ul id="errorList"></ul>
+      </form>
+
+      <p id="registerLink">
+        Not registered? <a href="register.html" id="registerLinkAnchor">Create an account</a>
+      </p>
+
+    </div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/style-login.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

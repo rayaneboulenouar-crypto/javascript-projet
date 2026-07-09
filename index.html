@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirection...</title>
+  <script>
+    // Redirige vers la page de login (ou vers l'app si déjà connecté)
+    if (sessionStorage.getItem("user")) {
+      window.location.href = "app.html";
+    } else {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirection en cours...</p>
+</body>
+</html>
